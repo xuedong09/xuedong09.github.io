@@ -11,7 +11,7 @@ email: xdsnakex@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   My note, record some useful knowledge.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://pi.xd09.ml" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  xuedong09
 
