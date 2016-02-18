@@ -15,7 +15,7 @@ or prevent Jekyll from generating the excerpts in the first place.
 Jekyll does not yet have a way to disable excerpts entirely, 
 so the next-best option is to configure it so that the excerpts are always valid Liquid.
 
-You can do this by settiffffffffffffng excerpt_separator to a nonsense string that never appears in your posts, 
+You can do this by setting excerpt_separator to a nonsense string that never appears in your posts, 
 so that the excerpt will include the entire post (which is already known to be valid markup).
 Better yet, you can set excerpt_separator to an empty string, so that the excerpt will end immediately.
 This will reduce the amount of work that Jekyll needs to do, making your site build slightly faster.
