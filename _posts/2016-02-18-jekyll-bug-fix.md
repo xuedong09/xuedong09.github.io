@@ -21,6 +21,5 @@ Better yet, you can set excerpt_separator to an empty string, so that the excerp
 This will reduce the amount of work that Jekyll needs to do, making your site build slightly faster.
 
 In short, this bug can be fixed by adding the following line to _config.yml:
-
 excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed
 {% endhighlight %}
