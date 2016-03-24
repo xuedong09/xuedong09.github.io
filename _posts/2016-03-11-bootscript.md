@@ -26,6 +26,7 @@ ansible
     six
 flask
 django
+pyinstaller
 {% endhighlight %}
 
 ### ubbuntu sogou 输入法在其他应用中使用
