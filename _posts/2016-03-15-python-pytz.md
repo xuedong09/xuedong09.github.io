@@ -24,28 +24,30 @@ now_tz.strftime("%z")
 
 ### 根据机器时间获取太平洋时间是pst还是pdt
 
-  def get_local_utcoffset():
-      now = datetime.datetime.now()
-      pacific = pytz.timezone('US/Pacific')
-      now_tz = pacific.localize(now)
-      local_utcoffset = -7 if now_tz.strftime('%z') == '-0700' else -8
-      return local_utcoffset
+    def get_local_utcoffset():
+        now = datetime.datetime.now()
+        pacific = pytz.timezone('US/Pacific')
+        now_tz = pacific.localize(now)
+        local_utcoffset = -7 if now_tz.strftime('%z') == '-0700' else -8
+        return local_utcoffset
 
 ### 获取两个时区的间隔
-  def get_delta_utcoffset(utcoffset):
-    local_utcoffset = get_local_utcoffset()
-    delta_utcoffset = utcoffset - local_utcoffset
-    delta_t = datetime.timedelta(hours=delta_utcoffset)
-    return delta_utcoffset
+
+    def get_delta_utcoffset(utcoffset):
+      local_utcoffset = get_local_utcoffset()
+      delta_utcoffset = utcoffset - local_utcoffset
+      delta_t = datetime.timedelta(hours=delta_utcoffset)
+      return delta_utcoffset
 
 ### 将本地时间换算成对应时区的日期
-  def get_utc_date(utcoffset):
-      now = datetime.datetime.now()
-      delta_utcoffset = get_delta_utcoffset(utcoffset)
-      delta_hour = datetime.timedelta(hours=delta_utcoffset)
-      utc_date = now + delta_hour
-      utc_date = str(utc_date.date())
-      return utc_date
+
+    def get_utc_date(utcoffset):
+        now = datetime.datetime.now()
+        delta_utcoffset = get_delta_utcoffset(utcoffset)
+        delta_hour = datetime.timedelta(hours=delta_utcoffset)
+        utc_date = now + delta_hour
+        utc_date = str(utc_date.date())
+        return utc_date
 
 
 
