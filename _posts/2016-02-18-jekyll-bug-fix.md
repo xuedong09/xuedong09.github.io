@@ -23,3 +23,9 @@ This will reduce the amount of work that Jekyll needs to do, making your site bu
 In short, this bug can be fixed by adding the following line to _config.yml:
 excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed
 {% endhighlight %}
+
+
+### jekll escape {{ " {{ " }}}} and {{ "{% " }}%}
+    {{ "{% this " }}%}
+    and for tags, to escape {{ this }} use:
+    {{ "{{ this " }}}}
