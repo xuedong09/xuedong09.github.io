@@ -26,6 +26,6 @@ excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll
 
 
 ### jekll escape {{ " {{ " }}}} and {{ "{% " }}%}
-    '{{ "{% this " }}%}'
+    {{ "{% this " }}%}
     and for tags, to escape {{ this }} use:
-    '{{ "{{ this " }}}}'
+    {{ "{{ this " }}}}
