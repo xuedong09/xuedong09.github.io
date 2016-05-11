@@ -6,6 +6,8 @@ categories: jekyll update
 ---
 
 ### swig insall error
+
+    error:
     SWIG/_evp.i:12: Error: Unable to find 'openssl/opensslconf.h'
     SWIG/_ec.i:7: Error: Unable to find 'openssl/opensslconf.h'
     
