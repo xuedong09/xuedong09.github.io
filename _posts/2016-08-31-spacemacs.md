@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "VIM"
+title:  "spacemacs"
 date:   2016-08-31 09:30:15 +0800
 categories: jekyll update
 ---
