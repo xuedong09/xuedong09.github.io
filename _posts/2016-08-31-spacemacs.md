@@ -14,3 +14,6 @@ categories: jekyll update
      go-mode
     )
 
+2.spacemacs turn off current line highlight
+
+    M-x spacemacs/toggle-highlight-current-line-globally or (N-m t h h)
