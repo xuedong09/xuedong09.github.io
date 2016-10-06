@@ -50,4 +50,19 @@ now_tz.strftime("%z")
         return utc_date
 
 
+### 给本地时间加timezone
+
+    import datetime
+    from pytz import timezone
+    now = datetime.datetime.now()
+    tz = timezone('US/Pacific')
+    tznow = tz.localize(now)
+
+
+### format datetime string
+
+    import datetime
+
+    now = datetime.datetime.now()
+    now.strftime("%Y-%m-%dT%H:%M:%S.%f%z")
 

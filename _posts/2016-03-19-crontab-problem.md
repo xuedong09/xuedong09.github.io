@@ -9,3 +9,9 @@ categories: jekyll update
 {% highlight shell %}
 * * * * * `date "+\%Y-\%m-\%d \%H:\%M:\%S"` > ~/tttt
 {% endhighlight %}
+
+
+### crontab no daemon docker run cron job, use supervisor
+
+     [program:cron]
+     command=cron -f
