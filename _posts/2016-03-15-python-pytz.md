@@ -14,7 +14,7 @@ categories: jekyll update
 import pytz
 import datetime
 
-pytz.all_timezonses 
+pytz.all_timezonses
 pacific = pytz.timezone('US/Pacific')
 now = datetime.datetime.now()
 now_tz = pacific.localize(now)
@@ -66,3 +66,14 @@ now_tz.strftime("%z")
     now = datetime.datetime.now()
     now.strftime("%Y-%m-%dT%H:%M:%S.%f%z")
 
+### change datetime timezone
+
+    import datetime, pytz
+    # target time zone
+    tz1 = pytz.timezone("Asia/Tokyo")
+    # get utctime
+    utcnow = datetime.datetime.utcnow()
+    # add utc timezone info
+    utcnow = utcnow.replace(tzinfo=pytz.utc)
+    # change to target timezone
+    tz1now = utcnow.astimezone(tz1)
