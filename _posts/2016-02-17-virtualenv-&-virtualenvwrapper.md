@@ -27,7 +27,11 @@ wsgi 启动的时候指定virtualenv pythonhome路径
 
 
 ### 注意：用virtualenvwrapper的时候，需要在.profile or .bashrc or .zshrc中加上下面两句是配置永久生效
-```
-export WORKON_HOME=~/Envs
-source /usr/local/bin/virtualenvwrapper.sh
-```
+
+    export WORKON_HOME=~/Envs
+    ubuntu:
+    source /usr/local/bin/virtualenvwrapper.sh
+    centos:
+    source /usr/bin/virtualenvwrapper.sh
+
+
