@@ -6,6 +6,7 @@ categories: jekyll update
 ---
 #### Use Better Exception in try：
 
+{% highlight python %}
    import sys
    import better_exceptions
    better_exceptions.hook()
@@ -15,3 +16,4 @@ categories: jekyll update
    except Exception as e:
       sys.excepthook(e.__class__, e, sys.exc_info()[2])
 
+{% endhighlight %}
