@@ -60,6 +60,8 @@ categories: jekyll update
     # install pip
     sudo apt-get install python-pip
     sudo pip install pip --upgrade
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    sudo python get-pip.py
 
     virtualenv
     virtualenvwrapper
