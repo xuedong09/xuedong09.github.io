@@ -23,6 +23,10 @@ categories: jekyll update
     #change .zshrm theme to "xd", logout and login again
 
     # docker install
+
+### install python3.7
+
+    https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
     
 ### vpn
 
