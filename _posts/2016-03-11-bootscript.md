@@ -24,9 +24,16 @@ categories: jekyll update
 
     # docker install
 
-### install python3.7
+### python3.7
 
     https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
+
+    sudo apt-get install python3.7-dev
+
+### pip
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    python get-pip.py
+
     
 ### vpn
 
