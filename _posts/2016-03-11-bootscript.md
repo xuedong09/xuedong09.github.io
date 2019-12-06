@@ -24,6 +24,11 @@ categories: jekyll update
 
     # docker install
 
+### ssh
+
+    vim authorized_keys
+    paste pub
+
 ### python3.7
 
     https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
