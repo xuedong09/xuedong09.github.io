@@ -8,7 +8,7 @@ categories: jekyll update
 ### Ubuntu
 
     # update system
-    sudo apt-get udpate
+    sudo apt-get update
 
     # base application
     sudo apt-get install git vim tmux -y
