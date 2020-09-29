@@ -34,6 +34,11 @@ categories: jekyll update
     https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
 
     sudo apt-get install python3.7-dev
+    
+    add to .zshrc:
+        alias python='python3.7'
+        export PATH="/home/xuedong09/.local/bin:$PATH"
+        ulimit -n 65535
 
 ### pip
     curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
