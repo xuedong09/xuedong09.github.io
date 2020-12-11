@@ -34,6 +34,7 @@ categories: jekyll update
     https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/
 
     sudo apt-get install python3.7-dev
+    sudo apt-get install python3.8-distutils
     
     add to .zshrc:
         alias python='python3.7'
