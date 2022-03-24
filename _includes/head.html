@@ -14,11 +14,33 @@
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  
+    gtag('config', 'AW-708082195');  
     ga('create', 'UA-74589855-1', 'auto');
     ga('send', 'pageview');
   
   </script>
+<script>
+
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-708082195/ggZhCLe6jqwDEJP00dEC',
+      'event_callback': callback
+  });
+  return false;
+}
+  var atags = document.getElementsByClassName("post-link");
+  for (var atag in atags) {
+   atag.addEventListener("click", function() {
+     var url = atag.href;
+     gtag_report_conversion(url);
+    }); 
+} 
+</script>
 </head>
 
 
