@@ -14,25 +14,7 @@
     </div>
 
     {% include footer.html %}
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-708082195/ggZhCLe6jqwDEJP00dEC',
-      'event_callback': callback
-  });
-  return false;
-}
-  var atags = document.getElementsByClassName("post-link");
-  for (let atag of atags) {
-    var url = atag.href;
-    gtag_report_conversion(url);
-    }
-</script>
+
   </body>
 
 </html>
