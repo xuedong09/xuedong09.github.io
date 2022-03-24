@@ -28,10 +28,10 @@ function gtag_report_conversion(url) {
   return false;
 }
   var atags = document.getElementsByClassName("post-link");
-  atags.forEach(function(atag, index) {
+  for (let atag of atags) {
     var url = atag.href;
     gtag_report_conversion(url);
-   });
+    }
 </script>
   </body>
 
