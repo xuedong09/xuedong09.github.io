@@ -4,6 +4,29 @@
   {% include head.html %}
 
   <body>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAhga_oWXhc0YZXI-grHPNjeoXys4FPvbg",
+    authDomain: "xd-note-firebase.firebaseapp.com",
+    projectId: "xd-note-firebase",
+    storageBucket: "xd-note-firebase.appspot.com",
+    messagingSenderId: "1089836247666",
+    appId: "1:1089836247666:web:689279475e01479035f0eb",
+    measurementId: "G-QZVG4C4Z5E"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55BHXN4"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
